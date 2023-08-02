@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // Set up default mongoose connection
-mongoose.connect(Mongo);
+mongoose.connect("mongodb+srv://kartiksonar10:Derivative%40123@cluster0.fcbt7z7.mongodb.net/todolistDB?authMechanism=SCRAM-SHA-1&authSource=cluster0");
 
 // Mongoose Schema for individual to-do list items
 const itemSchema = new mongoose.Schema({
